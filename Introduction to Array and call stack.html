@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS first class</title>
+
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+<script>
+    // javascript array
+    var fruits=['apple','jackfruit','banana'];
+    var age=[3,4,5,6,7,8,9,10];
+    var height=[4,5,6,3.5,6.1];
+    document.getElementById("demo").innerHTML=fruits[3];
+document.write(age[3]);
+console.log(height[0]);
+// javascript array method
+var game=['football','cricket','badminton','swimming'];
+// how to all elements in an an array using 
+document.getElementById("demo1").innerHTML=game.join("* sport")
+    document.getElementById("demo2").innerHTML = game.pop()
+    document.getElementById("demo3").innerHTML = game;
+// javascript functions     
+function add(a,b)
+{
+    var sum;
+    sum=a+b;
+    return sum;
+
+}
+function average(a,b){
+    var average= add(a,b);
+    return average;
+}
+var result=average(100,200);
+document.getElementById("demo5").innerHTML=result;
+
+
+</script>
+</body>
+
+</html>
